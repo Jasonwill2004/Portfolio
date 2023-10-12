@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio webt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4093a586c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">PORTFOLIO.</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi , I'm <span>Jason William</span> <br> From sqaud 53</h1>
+            </div>
+        </div>
+        <!------------about----------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="userjason.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">ABOUT ME</h1>
+                        <p>I'm a skilled web developer 
+                             who designs, creates, and maintains websites and web applications.<br> I use programming languages like HTML, CSS, and JavaScript to bring a website's design to life,<br> ensuring it functions seamlessly and looks visually appealing.I am a skilled Python programmer with <br> a passion for crafting elegant and efficient code. With a strong foundation in this versatile language,<br> I've taken on various challenging projects, from web development to data analysis. What sets me apart <br> is not just my technical expertise, but also my ability to communicate effectively. I excel in translating <br> complex technical concepts into plain language, making me a valuable team player. Moreover, I pride <br> myself on my leadership skills, which have been honed through years of guiding and mentoring  colleagues <br> to successful project outcomes. My ability to inspire and rally a team toward a common goal, combined with <br> my technical proficiency, ensures that I not only deliver high-quality results but also foster a collaborative and <br> innovative work environment.
+
+
+
+
+                            </p>
+
+                             <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing in Figma / Creative content</li>
+                                    <li><span>Web Development</span><br>Building websites/Designing Web</li>
+                                    <li><span>Problem Solving</span><br>Python / C++ / Passionate coder</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="hobbies">
+                                <ul>
+                                    <li><span>Book Reader</span><br>Read around 50 books / fictional mostly </li>
+                                    <li><span>Basketball player</span><br>Been South Zone player</li>
+                                    <li><span>Researcher</span><br>Has been researching in how AI works!<br></li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>School</span><br>Mount Litera Zee School</li>
+                                    <li><span>College</span><br>Lovely professional University</li>
+                                    <li><span>B.Tech CSE</span><br>Kalvium</li>
+                                </ul>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/jason-william-81150b272/">/</a>
+    </div>
+
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")  
+    }
+    </script>
+    
+</body>
+</html>
